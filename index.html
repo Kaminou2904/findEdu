@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="images/logo.jpg"> -->
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/1dcc9f863c.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- owl carousel cdn link for css -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
+
+    <title>findEdu | Find best classes</title>
+</head>
+
+<body>
+    <!-- main div that wraps everything -->
+    <div class="main">
+
+        <!-- header div -->
+        <div class="header container">
+            <div class="addwraper d-flex justify-content-between align-items-center">
+                <p id="addPara" class="address text-capitalize m-0 mt-3"><i class="fas fa-map-marker-alt me-2"></i>powai
+                    mumbai
+                </p>
+                <h1 class="logo mt-3">
+                    Find<span>Edu</span>
+                </h1>
+            </div>
+            <h2 class="whatText text-capitalize">find the <span class="fw-bolder">best coaching</span><br>in mumbai</h2>
+            <div class="searchBox d-dlex align-itemss-center">
+                <i class="fas fa-search  border border-light border-end-0 rounded-start m-0 searchIcon"></i>
+                <input type="text" class="searchInpu  border border-light border-start-0 w-75 rounded-end "
+                    placeholder="Search for 'AC Service'">
+            </div>
+        </div>
+
+        <!-- div for categories -->
+        <div class="categories container mt-5">
+            <div class="categoryWrap">
+                <div onclick="openPopup(1)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://png.pngtree.com/png-vector/20220521/ourmid/pngtree-science-class-with-nucleus-and-atoms-revolving-around-it-png-image_4685785.png"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">sceince section</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(2)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://media.istockphoto.com/id/1281559160/vector/education-scholarship-icon.jpg?s=612x612&w=0&k=20&c=FqB7oDY1MObQeKwfI6OBw0Drt_hYG3nJWLotp2RHRkU="
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">school section</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(3)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://icon-library.com/images/commerce-icon/commerce-icon-29.jpg"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">commerce section</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(4)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://thumbs.dreamstime.com/b/vector-illustration-nursery-icon-vector-high-quality-illustration-nursery-icon-isolated-white-background-151597203.jpg"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">nursery</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(5)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/001/912/953/small/electrician-holding-lightning-bolt-mascot-circle-black-and-white-vector.jpg"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">bathroom cleaning</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(6)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://scalebranding.com/wp-content/uploads/2021/04/1-22.jpg" alt="salon image"
+                        class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">pest control</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popupContainer" onclick="closePopup()">
+                <div id="popup" class="popup">
+                    <span class="close-button" onclick="closePopup()">&times;</span>
+                    <div id="openContent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- div for carousel -->
+        <div class="carousel mt-5 container mb-5 pb-2">
+            <div class="owl-carousel owl-theme ">
+                <div class="items mx-1 ">
+                    <img src="./images/Ad -.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/Ad - 2.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/Ad - 3.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/Ad - 4.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/Ad -.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/Ad - 2.png" class="carouselImg" alt="">
+                </div>
+
+            </div>
+            <!-- <div class="banner container my-5">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/715/816/small/banner-abstract-background-board-for-text-and-message-design-modern-free-vector.jpg"
+                    class="bannerImg" style="width: 100%; height: 150px;" alt="">
+            </div> -->
+        </div>
+
+        <div class="featureMain container">
+            <h2>Featured Classes</h2>
+            <div class="featured  mb-5">
+                <div class="featWrap d-flex">
+                    <div class="featItem border me-3">
+                        <img src="./images/WhatsApp Image 2023-06-22 at 18.02.15.jpeg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName">Exclence Classes In Kurla</div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+                            <div class="featLocation text-muted mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                            </div>
+                            <div class="featTagWrap">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName">Exclence Classes In Kurla</div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+                            <div class="featLocation text-muted mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                            </div>
+                            <div class="featTagWrap">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName">Exclence Classes In Kurla</div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+                            <div class="featLocation text-muted mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                            </div>
+                            <div class="featTagWrap">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName">Exclence Classes In Kurla</div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+                            <div class="featLocation text-muted mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                            </div>
+                            <div class="featTagWrap">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 ">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nearClass container mb-5 pb-4">
+            <h2 class="mb-3">Classes Near By</h2>
+            <div class="nearWrap row">
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg">
+                            <img src="./images/WhatsApp Image 2023-06-22 at 18.02.15.jpeg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                Ecellence Classes in Kurla
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg ">
+                            <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                Ecellence Classes in Kurla
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg ">
+                            <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                Ecellence Classes in Kurla
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg ">
+                            <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                Ecellence Classes in Kurla
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- div for footer -->
+        <div class="footer p-0 w-100 bg-white">
+            <footer class="d-flex w-100 justify-content-around  p-2">
+                <div class="navItem  text-center">
+                    <i class="fas fa-home "></i>
+                    <p class="m-0">Home</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-calendar-plus"></i>
+                    <p class="m-0">Bookings</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-comments"></i>
+                    <p class="m-0">Chat</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-user-alt"></i>
+                    <p class="m-0">Profile</p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- our own javascript -->
+    <script src="main.js"></script>
+
+    <!-- jQuery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- owl carousel javascript link -->
+    <script src="OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1.2,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- 
+    .trendingSevice h3{
+    color: rgb(64, 64, 64);
+}
+
+.trendItem{
+    width: 350px;
+    box-shadow: 0 0 10px rgba(112, 112, 112, 0.1);
+    overflow: hidden;
+}
+
+.trendItem img{
+    border-radius: 10px;
+    width: 30%;
+}
+
+.trendItem p{
+    color: #404040;
+}
+.trendItem i{
+    color: #404040;
+}
+
+.trendName{
+    font-weight: 500;
+}
+
+.trendPrice{
+    font-size: 12px;
+}
+
+.trendTagWrap{
+    overflow-x: auto;
+    margin-top: -10px;
+}
+
+.trendRating{
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.trendTag{
+    width: max-content;
+}
+
+.trendTag p{
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: rgb(235, 235, 235);
+}
+ -->
