@@ -739,3 +739,67 @@ html{
         margin-right: 20px;
     }
 }
+
+/* styling for classDetail page */
+
+.desc p{
+    font-size: 13px;
+}
+
+.facilities h4{
+    color: #5e3bd3;
+}
+
+.facilitiesTabs{
+    overflow: auto;
+}
+
+.facilitiesTabsWrap{
+    width: max-content;
+}
+
+.facilityTab{
+    width: 100px;
+}
+
+.facilityTab img{
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.faciText p{
+    font-size: 12px;
+}
+
+.contactDiv h4{
+    color: #5e3bd3;
+}
+
+.adress{
+    font-size: 12px;
+}
+
+.coureses h4{
+    color: #5e3bd3;
+}
+
+.courseTab{
+    border: 1px solid #5e3bd3;
+    width: 47%;
+    color: #5e3bd3;
+}
+
+.userCard{
+    width: 100%;
+}
+
+.userImg{
+    width: 20%;
+}
+
+.reuserName{
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
