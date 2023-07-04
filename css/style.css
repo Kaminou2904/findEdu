@@ -789,12 +789,20 @@ html{
     color: #5e3bd3;
 }
 
+.reviewDiv h4{
+    color: #5e3bd3;
+}
+
 .userCard{
     width: 100%;
 }
 
 .userImg{
-    width: 20%;
+    width: 15%;
+}
+
+.userDate{
+    font-size: 13px;
 }
 
 .reuserName{
