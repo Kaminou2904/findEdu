@@ -216,7 +216,9 @@
 .featTag p{
     border-radius: 10px;
     font-size: 10px;
-    background-color: rgb(235, 235, 235);
+    /* background-color: rgb(235, 235, 235); */
+    background-color: white;
+    border: 0.5px solid rgb(199, 199, 199);
     white-space: nowrap;
 }
 
