@@ -14,9 +14,9 @@
 }
 
 .logo{
-    font-family: 'Yellowtail', cursive;
-    color: #774eff !important;
-    font-weight: 600;
+    /* font-family: 'Yellowtail', cursive; */
+    /* color: #774eff !important; */
+    font-weight: 700;
 }
 
 .logo span{
@@ -62,16 +62,21 @@
     overflow-x: auto;
 }
 
-.categoryWrap{
+/* .categoryWrap{
     display: flex;  
     overflow-x: auto;
     width: max-content;
+} */
+
+.categoryHeading{
+    color: purple;
 }
 
 .categoryCard{
     width: 100px;
     height: auto;
     padding: 0;
+    margin: 10px;
     font-size: 10px;
     cursor: pointer;
 }
@@ -84,6 +89,8 @@
 
 .categoryImg{
     transition: 0.3s;
+    background-color: #f4f4f4;
+    border: none !important;
 }
 
 .categoryCard:hover .categoryImg{
@@ -160,9 +167,11 @@
 }
 
 .featItem{
-    width: 220px;
+    width: 210px;
     border-radius: 10px;
     overflow: hidden;
+    border: none !important;
+    box-shadow: 0 0 20px rgb(195, 195, 195);
 }
 
 .featImg{
@@ -173,19 +182,22 @@
 
 .featData{
     padding: 8px;
+    padding-bottom: 0px;
 }
 
 .featName{
-    width: 170px !important;
+    /* width: 170px !important; */
     font-weight: 500;
 }
 
 .featRating{
     width: 50px !important;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .featLocation{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .featTagWrap{
@@ -193,7 +205,8 @@
 }
 
 .featTag{
-    width: max-content;
+    width: 100%;
+    overflow-x: auto;
 }
 
 ::-webkit-scrollbar {
@@ -204,6 +217,7 @@
     border-radius: 10px;
     font-size: 10px;
     background-color: rgb(235, 235, 235);
+    white-space: nowrap;
 }
 
 /* NEAR CLASSES STYLING */
@@ -297,13 +311,14 @@
 
 @media screen and (max-width: 750px){
     .categoryWrap{
-        justify-content: center;
+        justify-content: space-between;
     }   
 }
 
 @media screen and (max-width: 385px) {
     .categoryCard{
         width: 100px;
+        margin: 0px;
     }
 }
 
