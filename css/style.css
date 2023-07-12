@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/static/PlusJakartaSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Plus Jakarta Sans1';
+    src: url('../fonts/static/PlusJakartaSans-ExtraBold.ttf');
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 .header h3{
     font-size: 20px;
     color: #404040;
@@ -29,6 +42,7 @@
     margin-top: 40px;
     margin-bottom: 20px;
     color: #755BCD;
+    font-family: 'Plus Jakarta Sans1';
 }
 
 .searchBox{
