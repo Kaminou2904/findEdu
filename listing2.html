@@ -34,11 +34,10 @@
             <h4 class="d-flex"><a class="nav-link me-3" href="index.html"><i class="fas fa-arrow-left"></i></a>Listings
             </h4>
         </div>
-        <div class="serarchBoxWrap pt-4 container">
-            <div class="searchBox d-dlex align-itemss-center">
-                <i class="fas fa-search  border border-light border-end-0 rounded-start m-0 searchIcon"></i>
-                <input type="text" id="searchInpu"
-                    class="searchInpu  border border-light border-start-0 w-75 rounded-end "
+        <div id="serarchBoxWrap" class="serarchBoxWrap pt-4 pb-2 container bg-white">
+            <div class="searchBox d-dlex align-itemss-center bg-white">
+                <i id="searchIcon" class="fas fa-search rounded-start m-0 searchIcon"></i>
+                <input type="text" id="searchInpu" class="searchInpu  w-75 rounded-end "
                     placeholder="Search by name or location...">
             </div>
         </div>
@@ -55,7 +54,9 @@
                         </div>
                         <div class="nearData">
                             <div class="nearName">
-                                <a href="detail.html" class="nav-link fw-bold">Allen Career Institute<p class="mb-0 d-inline fw-normal text-muted"><i class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
+                                <a href="detail.html" class="nav-link fw-bold">Allen Career Institute<p
+                                        class="mb-0 d-inline fw-normal text-muted"><i
+                                            class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
                             </div>
                             <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
                             </div>
@@ -83,7 +84,9 @@
                         </div>
                         <div class="nearData">
                             <div class="nearName">
-                                <a href="detail.html" class="nav-link fw-bold">FIITJEE<p class="mb-0 d-inline fw-normal pb-1"><i class="fas fa-star mx-1 ms-2"></i>4.6</p></a>
+                                <a href="detail.html" class="nav-link fw-bold">FIITJEE<p
+                                        class="mb-0 d-inline fw-normal pb-1"><i class="fas fa-star mx-1 ms-2"></i>4.6
+                                    </p></a>
                             </div>
                             <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
                             </div>
@@ -131,7 +134,9 @@
                         </div>
                         <div class="nearData">
                             <div class="nearName">
-                                <a href="detail.html" class="nav-link fw-bold">Aakash Institute<p class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
+                                <a href="detail.html" class="nav-link fw-bold">Aakash Institute<p
+                                        class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6
+                                    </p></a>
                             </div>
                             <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
                             </div>
@@ -159,7 +164,9 @@
                         </div>
                         <div class="nearData">
                             <div class="nearName">
-                                <a href="detail.html" class="nav-link fw-bold">Resonance<p class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
+                                <a href="detail.html" class="nav-link fw-bold">Resonance<p
+                                        class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6
+                                    </p></a>
                             </div>
                             <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
                             </div>
@@ -187,7 +194,9 @@
                         </div>
                         <div class="nearData">
                             <div class="nearName">
-                                <a href="detail.html" class="nav-link fw-bold">Rao IIT Academy<p class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
+                                <a href="detail.html" class="nav-link fw-bold">Rao IIT Academy<p
+                                        class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6
+                                    </p></a>
                             </div>
                             <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
                             </div>
@@ -216,7 +225,8 @@
                         <div class="nearData">
                             <div class="nearName">
                                 <a href="detail.html" class="nav-link fw-bold">
-                                    Vidyalankar<p class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
+                                    Vidyalankar<p class="mb-0 d-inline fw-normal"><i
+                                            class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
                             </div>
                             <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
                             </div>
@@ -245,7 +255,8 @@
                         <div class="nearData">
                             <div class="nearName">
                                 <a href="detail.html" class="nav-link fw-bold">
-                                    PACE IIT and Medical<p class="mb-0 d-inline fw-normal"><i class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
+                                    PACE IIT and Medical<p class="mb-0 d-inline fw-normal"><i
+                                            class="fas fa-star mx-1 text-muted"></i>4.6</p></a>
                             </div>
                             <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
                             </div>
@@ -392,14 +403,6 @@
 
     <!-- owl carousel javascript link -->
     <!-- <script src="./js/owl.carousel.min.js"></script> -->
-    
-    <script>
-        const searchInpu = document.getElementById('searchInpu');
-        // console.log(searchInpu.hasFocus())
-        searchInpu.addEventListener('click', ()=>{
-            window.scrollTo(0, 60)
-        })
-    </script>
 </body>
 
 </html>
