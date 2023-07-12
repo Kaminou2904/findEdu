@@ -322,6 +322,20 @@
     font-size: 14px;
 }
 
+.nearTabsss{
+    overflow-x: auto;
+    width: 100%;
+}
+
+.nearTabsss::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+
+.nearTab{
+    font-size: 10px;
+}
+
 .nearRating p{
     font-size: 14px;
     margin-bottom: 10px;
