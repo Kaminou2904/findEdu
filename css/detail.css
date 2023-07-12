@@ -282,13 +282,9 @@
 
 /* NEAR CLASSES STYLING */
 .nearItem{
-    /* width: 340px; */
     display: flex;
-    /* margin: 5px; */
     align-items: center;
     justify-content: space-between;
-    /* box-shadow: 0 0 10px rgb(185, 185, 185); */
-    /* padding: 10px; */
     border-radius: 10px;
     overflow: hidden;
     margin: 0px 8px;
@@ -296,7 +292,9 @@
 
 .nearName a{
     color: rgb(43, 43, 43);
-    font-size: 20px;
+    font-size: 19px;
+    /* white-space: nowrap; */
+    line-height: 19px;
 }
 
 .nearImg{
@@ -310,7 +308,7 @@
 }
 
 .nearData{
-    width: 60%;
+    width: 55%;
     padding-left: 10px;
 }
 
