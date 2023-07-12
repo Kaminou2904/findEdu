@@ -299,6 +299,7 @@
 
 .nearName a p{
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .nearImg{
