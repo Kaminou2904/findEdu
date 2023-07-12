@@ -297,6 +297,10 @@
     line-height: 19px;
 }
 
+.nearName a p{
+    font-size: 12px;
+}
+
 .nearImg{
     width: 45%;
 }
