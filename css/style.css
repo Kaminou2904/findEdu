@@ -376,7 +376,7 @@ body{
 
 @media screen and (max-width: 385px) {
     .categoryCard{
-        width: 100px;
+        width: 84px;
         margin: 0px;
     }
 }
