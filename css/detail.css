@@ -1,7 +1,52 @@
+@font-face {
+    font-family: 'font-regular';
+    src: url('../fonts/static/PlusJakartaSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'font-extrabold';
+    src: url('../fonts/static/PlusJakartaSans-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'font-bold';
+    src: url('../fonts/static/PlusJakartaSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'font-semibold';
+    src: url('../fonts/static/PlusJakartaSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'font-medium';
+    src: url('../fonts/static/PlusJakartaSans-Medium.ttf');
+}
+@font-face {
+    font-family: 'font-light';
+    src: url('../fonts/static/PlusJakartaSans-Light.ttf');
+}
+
+.font-regular{
+    font-family: 'font-rgular', sans-serif !important;
+}
+.font-bold{
+    font-family: 'font-bold', sans-serif !important;
+}
+.font-semibold{
+    font-family: 'font-semibold', sans-serif !important;
+}
+.font-extrabold{
+    font-family: 'font-extrabold', sans-serif !important;
+}
+.font-medium{
+    font-family: 'font-medium', sans-serif !important;
+}
+.font-light{
+    font-family: 'font-light', sans-serif !important;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'font-regular', sans-serif;
 }
 
 .header h3{
@@ -312,15 +357,12 @@
     font-size: 19px;
     /* white-space: nowrap; */
     line-height: 19px;
+    font-family: 'font-bold', sans-serif;
 }
 
 .nearName a p{
     font-size: 14px;
     white-space: nowrap;
-}
-
-.fa-star:before{
-    color: #a3a3a3 !important;
 }
 
 .nearImg{
@@ -379,8 +421,13 @@
     background-color: rgb(235, 235, 235);
 }
 
-.fa-star:before {
+.fa-star:before{
     content: "\f005";
+    color: gold;
+}
+
+.fa-star-half-alt:before{
+    content: "\f5c0";
     color: gold;
 }
 
@@ -531,13 +578,21 @@ hr{
     font-size: 18px !important;
 }
 
+.classNameCardName{
+    font-size: 15px;
+    line-height: 20px;
+}
+.classNameCardLocation{
+    font-size: 12px;
+}
+
 .desc{
     font-size: 12px;
 }
 
 .userIcon{
     background-color: white;
-    margin-left: -25px;
+    margin-left: -35px;
 }
 
 .userIcon:nth-child(1){
@@ -562,8 +617,38 @@ hr{
 }
 
 .facilityCard{
-    min-width: 70px;
-    background-color: rgb(248, 248, 248) !important;
+    min-width: 60px;
+    /* background-color: rgb(248, 248, 248) !important; */
+}
+
+.bg1{
+    background-color: rgb(255, 208, 208);
+}
+
+.bg2{
+    background-color: rgb(202, 202, 255);
+}
+
+.bg3{
+    background-color: rgb(208, 255, 208);
+}
+
+.bg4{
+    background-color: rgb(255, 216, 222);
+}
+
+.bg5{
+    background-color: rgb(255, 208, 255);
+}
+
+.facilityCard img{
+    border-radius: 15px !important;
+}
+
+.facilityCard p{
+    font-size: 10px;
+     white-space: nowrap;
+     margin-top: 3px;
 }
 
 .faciAddress{
@@ -583,7 +668,33 @@ hr{
     width: 35%;
 }
 
+.courseCard{
+    width: 150px !important;
+    background-color: rgb(216, 216, 216) !important;
+}
+
+.courseCardData p{
+    font-size: 12px;
+    line-height: 12px;
+}
+
 .comment{
+    font-size: 14px;
+}
+
+.commentImg{
+    width: 15%;
+}
+
+.commentPerson{
+    line-height: 25px;
+}
+
+.commentDate{
+    font-size: 12px;
+}
+
+.commentPara{
     font-size: 14px;
 }
 
