@@ -669,7 +669,7 @@ hr{
 }
 
 .courseCard{
-    width: 150px !important;
+    width: min(47%, 300px) !important;
     background-color: rgb(216, 216, 216) !important;
 }
 
