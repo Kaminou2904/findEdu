@@ -129,10 +129,10 @@ body{
 }
 
 .categoryCard{
-    width: 100px;
+    width: 90px;
     height: auto;
     padding: 0;
-    margin: 10px;
+    /* margin: 10px; */
     font-size: 10px;
     cursor: pointer;
 }
