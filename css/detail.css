@@ -42,6 +42,15 @@
     font-family: 'font-light', sans-serif !important;
 }
 
+.brandColor{
+    color: #EC8484 !important;
+}
+
+.brandColor2{
+    color: #84acec !important;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -582,12 +591,21 @@ hr{
     font-size: 15px;
     line-height: 20px;
 }
+
+.classNameCardImg{
+    width: min(25%, 80px) !important;
+}
+
 .classNameCardLocation{
     font-size: 12px;
 }
 
 .desc{
     font-size: 12px;
+}
+
+.desc h3{
+    font-family: 'font-semibold', sans-serif;
 }
 
 .userIcon{
@@ -617,7 +635,7 @@ hr{
 }
 
 .facilityCard{
-    min-width: 60px;
+    width: 60px;
     /* background-color: rgb(248, 248, 248) !important; */
 }
 
@@ -683,7 +701,7 @@ hr{
 }
 
 .commentImg{
-    width: 15%;
+    width: min(15%, 65px);
 }
 
 .commentPerson{
@@ -699,14 +717,22 @@ hr{
     line-height: 15px;
 }
 
-.floatBtnWrap{
+.floatBtnsDiv{
+    position: fixed;
+    margin: auto;
+    bottom: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+/* .floatBtnWrap{
     position: fixed;
     padding-bottom: 20px;
     margin: auto;
     bottom: 0px;
     width: 100%;
     z-index: 10;
-}
+} */
 
 .floatBooking, .floatPrice{
     width: 45%;

@@ -42,6 +42,13 @@
     font-family: 'font-light', sans-serif !important;
 }
 
+.brandColor{
+    color: #EC8484 !important;
+}
+
+.brandColor2{
+    color: #84acec !important;
+}
 
 *{
     margin: 0px;
@@ -145,8 +152,9 @@ body{
 
 .categoryImg{
     transition: 0.3s;
-    background-color: #f4f4f4;
+    background-color: #fff2f2;
     border: none !important;
+    padding: 5px;
 }
 
 .categoryCard:hover .categoryImg{
