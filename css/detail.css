@@ -45,6 +45,9 @@
 .brandColor{
     color: #fe6361 !important;
 }
+.bg-brandColor{
+    background-color: #fe6361 !important;
+}
 
 .brandColor2{
     color: #564aff !important;
