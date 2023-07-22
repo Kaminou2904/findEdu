@@ -43,7 +43,7 @@
 }
 
 .brandColor{
-    color: #fe6361 !important;
+    color: #EC8484 !important;
 }
 
 .brandColor2{
@@ -234,10 +234,10 @@ body{
 
 .featItem{
     width: 210px;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     border: none !important;
-    box-shadow: 0 0 20px rgb(195, 195, 195);
+    box-shadow: 0 0 10px rgb(195, 195, 195, 0.6);
 }
 
 .featImg{
@@ -894,4 +894,8 @@ html{
     margin: 0px;
     padding: 0px;
     font-size: 18px;
+}
+
+.footerPara{
+    font-size: 12px;
 }
