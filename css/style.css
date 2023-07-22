@@ -74,6 +74,7 @@ body{
     /* font-family: 'Yellowtail', cursive; */
     /* color: #774eff !important; */
     font-weight: 700;
+    width: min(45%, 200px);
 }
 
 .logo span{
@@ -96,7 +97,7 @@ body{
 }
 
 .searchBox{
-    box-shadow: 0 0 15px #cccbcb;
+    box-shadow: 0 0 15px rgb(237, 237, 237, 0.6);
     border-radius: 10px;
     overflow: hidden;
 }
