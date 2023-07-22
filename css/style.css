@@ -155,7 +155,7 @@ body{
     transition: 0.3s;
     background-color: #fff2f2;
     border: none !important;
-    padding: 5px;
+    padding: 10px;
 }
 
 .categoryCard:hover .categoryImg{
