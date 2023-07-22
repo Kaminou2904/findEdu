@@ -907,3 +907,7 @@ html{
 .footerPara{
     font-size: 12px;
 }
+
+.letter-spacing{
+    letter-spacing: -0.4px;
+}
