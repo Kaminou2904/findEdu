@@ -412,13 +412,31 @@
                 </div>
             </div>
         </div>
+
+        <div id="formPopupContainer" class="formPopupContainer contianer-fluid px-2">
+            <div class="formPopupWrap container bg-light mb-5 px-4 py-4">
+                <div class="formPopup">
+                    <div class="userForm">
+                        <div class="mb-3">
+                            <p class="mb-0 fs-4 brandColor">Who Are You ?</p>
+                            <input type="radio" name="user" class="redioInpu" id="parent" value="parent"> <label for="parent">Parent</label>
+                            <input type="radio" name="user" class="ms-2 redioInpu" id="student" value="student"> <label for="student">Student</label>
+                        </div>
+                        <input type="text" class="form-control mb-0" placeholder="Enter your name">
+                        <input type="tel" class="form-control mt-2" placeholder="Enter mobile number">
+                        <div class="btn bg-brandColor text-white mt-3">Submit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- jQuery cdn link -->
     <script src="./js/jquery-3.7.0.min.js"></script>
 
     <!-- our own javascript -->
-    <!-- <script src="./js/listing.js"></script> -->
+    <!-- <script src="./js/detail.js"></script> -->
 
     <!-- bootstrap javascript -->
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -490,6 +508,10 @@
                     nav.style.top = '0px';
                 }
             });
+
+            // setTimeout(()=>{
+
+            // })
 
         });
     </script>
